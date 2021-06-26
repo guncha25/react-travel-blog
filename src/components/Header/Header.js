@@ -53,7 +53,9 @@ function Header() {
               <a href="/#" className="sign-in">
                 Sign in
               </a>
-              <div onClick={toggleTheme}>{isDark ? `Light` : `Dark`}</div>
+              <div className={style.dark_toggle} onClick={toggleTheme}>
+                {isDark ? `Light` : `Dark`}
+              </div>
               <a href="/#" className="subscribe-toggle">
                 Subscribe
               </a>
