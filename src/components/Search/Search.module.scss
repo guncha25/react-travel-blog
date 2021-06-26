@@ -1,0 +1,40 @@
+@import "../../scss/functions";
+@import "../../scss/variables";
+
+.search_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: getColor(bg);
+  padding-top: 2rem;
+}
+
+.close_search {
+  cursor: pointer;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.search_input {
+  background: getColor(featured-bg);
+  border: 0;
+  font-size: 18px;
+  margin-top: 2rem;
+  padding: 16px 56px 16px 24px;
+  line-height: 1;
+  width: 100%;
+  transition: all 0.3s ease;
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+.search_results {
+  margin-top: 2rem;
+}
+
+.search_item {
+  margin-top: 2rem;
+}

@@ -1,18 +1,28 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Container from "../Container";
+import Search from "../Search";
 import style from "./Header.module.scss";
+import SearchIcon from "../../assets/icons/SearchIcon";
+import { useTheme } from "../../util/hooks/Theme";
 
 function Header() {
-  const [isOpen, setOpen] = useState(false);
+  const [menuIsOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
-    setOpen(!isOpen);
+    setMenuOpen(!menuIsOpen);
   };
+  const [searchIsOpen, setSearchOpen] = useState(false);
+  const toggleSearch = () => {
+    setSearchOpen(!searchIsOpen);
+  };
+  const { isDark, toggleTheme } = useTheme();
   return (
     <header>
       <Container>
-        <div className={[style.header, isOpen ? style.open : null].join(" ")}>
-          {isOpen && (
+        <div
+          className={[style.header, menuIsOpen ? style.open : null].join(" ")}
+        >
+          {menuIsOpen && (
             <span className={style.close_menu} onClick={toggleMenu}>
               Close
             </span>
@@ -43,15 +53,14 @@ function Header() {
               <a href="/#" className="sign-in">
                 Sign in
               </a>
-              <a href="/#" className="darkmode-toggle">
-                Dark|Light
-              </a>
+              <div onClick={toggleTheme}>{isDark ? `Light` : `Dark`}</div>
               <a href="/#" className="subscribe-toggle">
                 Subscribe
               </a>
-              <a href="/#" className="search-toggle">
-                Search
-              </a>
+              <SearchIcon
+                className={style.search_icon}
+                onClick={toggleSearch}
+              />
             </div>
           </div>
         </div>
@@ -64,14 +73,12 @@ function Header() {
           <div className={style.header_title}>
             <h1>Korima</h1>
           </div>
-          <a href="/#" className="search-toggle">
-            Search
-          </a>
+          <SearchIcon className={style.search_icon} onClick={toggleSearch} />
         </div>
-        <div
-          className={[isOpen ? style.menu_overlay : null].join(" ")}
-          onClick={toggleMenu}
-        ></div>
+        {menuIsOpen && (
+          <div className={style.menu_overlay} onClick={toggleMenu}></div>
+        )}
+        {searchIsOpen && <Search onClick={toggleSearch} />}
       </Container>
     </header>
   );

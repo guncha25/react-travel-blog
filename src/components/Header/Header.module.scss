@@ -12,7 +12,7 @@
   left: 0;
   top: 0;
   min-width: 320px;
-  z-index: 9999;
+  z-index: 2;
   transform: translateX(-100%);
   @include from-m {
     display: flex;
@@ -66,6 +66,7 @@
 
 .burger {
   cursor: pointer;
+  padding-bottom: 6px;
   & > span {
     width: 30px;
     height: 2px;
@@ -73,6 +74,11 @@
     margin-top: 6px;
     display: block;
   }
+}
+
+.search_icon {
+  cursor: pointer;
+  fill: getColor(font-primary);
 }
 
 .header_main {
@@ -86,7 +92,7 @@
   display: flex;
   justify-content: space-between;
   padding: 25px 0;
-  align-items: baseline;
+  align-items: flex-end;
   @include from-m {
     display: none;
   }
@@ -101,19 +107,14 @@
   }
   li {
     margin-right: 20px;
-    a {
-      text-decoration: none;
-      color: getColor(font-primary);
-      font-family: $font-nunito;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
   }
 }
 
 .header_title {
   margin-right: 20px;
+  @include from-m {
+    margin-bottom: 0;
+  }
   h1 {
     font-family: $font-lato;
     letter-spacing: 5px;
@@ -129,7 +130,8 @@
   @include from-m {
     flex-flow: row;
   }
-  a {
+  a,
+  div {
     margin-right: 20px;
     text-decoration: none;
     color: getColor(font-primary);
