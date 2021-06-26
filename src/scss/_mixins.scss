@@ -1,0 +1,18 @@
+@import "breakpoint-sass";
+@import "variables";
+
+@mixin from-s {
+  @include breakpoint($breakpoint-sm) {
+    @content;
+  }
+}
+@mixin from-m {
+  @include breakpoint($breakpoint-md) {
+    @content;
+  }
+}
+@mixin from-l {
+  @include breakpoint($breakpoint-lg) {
+    @content;
+  }
+}

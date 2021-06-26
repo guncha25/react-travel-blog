@@ -1,0 +1,16 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  max-width: $layout-width-sm;
+  @include from-m {
+    max-width: $layout-width-md;
+  }
+  @include from-l {
+    max-width: $layout-width-lg;
+  }
+}

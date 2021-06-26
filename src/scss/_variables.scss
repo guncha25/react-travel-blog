@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Nunito+Sans);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap);
+
+$font-nunito: "Nunito Sans", sans-serif;
+$font-lato: "Lato", sans-serif;
+
+$layout-width-sm: 640px;
+$layout-width-md: 800px;
+$layout-width-lg: 1200px;
+
+$breakpoint-sm: 640px;
+$breakpoint-md: 800px;
+$breakpoint-lg: 1000px;
+
+$colors: (
+  bg: #fff,
+  alt: #f0f2f4,
+  line: #f0f2f4,
+  accent: #141526,
+  link: #141526,
+  gray: #c8ced2,
+  green: #7ea41f,
+  blue: #3285e4,
+  red: #f05230,
+  font-primary: #141526,
+  font-secondary: #727377,
+  font-light: #818a8e,
+  icon: #141526,
+  featured-bg: #f7f7f7,
+);
+
+$colors-dark: (
+  bg: #141516,
+  bg-alt: #242526,
+  line: #242526,
+  accent: #d4d4d5,
+  link: #d4d4d5,
+  gray: #c8ced2,
+  green: #7ea41f,
+  blue: #3285e4,
+  red: #f05230,
+  font-primary: #d4d4d5,
+  font-secondary: #9a9b9b,
+  font-light: #656566,
+  icon: #d4d4d5,
+  featured-bg: #1b1b1e,
+);
