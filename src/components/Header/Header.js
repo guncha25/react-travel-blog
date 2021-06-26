@@ -1,12 +1,22 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Container from "../Container";
 import style from "./Header.module.scss";
 
 function Header() {
+  const [isOpen, setOpen] = useState(false);
+  const toggleMenu = () => {
+    setOpen(!isOpen);
+  };
   return (
     <header>
       <Container>
-        <div className={style.header}>
+        <div className={[style.header, isOpen ? style.open : null].join(" ")}>
+          {isOpen && (
+            <span className={style.close_menu} onClick={toggleMenu}>
+              Close
+            </span>
+          )}
           <div className={style.header_main}>
             <div className={style.header_title}>
               <h1>Korima</h1>
@@ -45,6 +55,23 @@ function Header() {
             </div>
           </div>
         </div>
+        <div className={style.header_mobile}>
+          <div onClick={toggleMenu} className={style.burger}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div className={style.header_title}>
+            <h1>Korima</h1>
+          </div>
+          <a href="/#" className="search-toggle">
+            Search
+          </a>
+        </div>
+        <div
+          className={[isOpen ? style.menu_overlay : null].join(" ")}
+          onClick={toggleMenu}
+        ></div>
       </Container>
     </header>
   );
