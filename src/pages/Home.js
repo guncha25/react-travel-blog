@@ -1,9 +1,10 @@
 import Layout from "../components/Layout";
+import Carousel from "../components/Carousel";
 
 function Home() {
   return (
     <Layout>
-      <h1>Home</h1>
+      <Carousel />
     </Layout>
   );
 }
