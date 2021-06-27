@@ -29,7 +29,7 @@
 
 .control {
   cursor: pointer;
-  z-index: 10;
+  z-index: 7;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -58,16 +58,27 @@
 
 .article_image {
   width: 100%;
+  height: 40%;
+  object-fit: cover;
   @include from-m {
+    width: 50%;
+    height: initial;
+  }
+  @include from-l {
     width: 66%;
   }
 }
 
 .article_content {
   width: 100%;
+  height: 60%;
   background-color: getColor(line);
   padding: 3rem;
   @include from-m {
+    width: 50%;
+    height: initial;
+  }
+  @include from-l {
     width: 34%;
   }
   h2 {
