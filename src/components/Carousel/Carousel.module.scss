@@ -46,6 +46,10 @@
   }
 }
 
+.control_arrow {
+  fill: getColor(font-primary);
+}
+
 .current {
   opacity: 1;
   margin-left: 0;

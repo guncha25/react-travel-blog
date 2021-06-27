@@ -1,5 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import style from "./Carousel.module.scss";
+import Left from "../../assets/icons/Left";
+import Right from "../../assets/icons/Right";
 
 const ARTICLES = [
   {
@@ -72,8 +74,12 @@ function Carousel() {
         ))}
       </div>
       <div className={style.control}>
-        <span onClick={prevIndex}>Previous</span>
-        <span onClick={nextIndex}>Next</span>
+        <span onClick={prevIndex}>
+          <Left className={style.control_arrow} />
+        </span>
+        <span onClick={nextIndex}>
+          <Right className={style.control_arrow} />
+        </span>
       </div>
     </div>
   );
