@@ -35,7 +35,7 @@
   right: 0;
   background-color: getColor(line);
   span {
-    padding: 1rem;
+    padding: 0.7rem;
     display: inline-flex;
     text-align: center;
     align-items: center;
@@ -73,7 +73,7 @@
   width: 100%;
   height: 60%;
   background-color: getColor(line);
-  padding: 3rem;
+  padding: 2rem;
   @include from-m {
     width: 50%;
     height: initial;
@@ -92,9 +92,8 @@
   color: getColor(font-primary);
   display: -webkit-flex;
   display: flex;
-  // font-size: 12px;
   line-height: 1;
-  margin: 2rem 0 0;
+  margin: 1rem 0 0;
   font-weight: 700;
 }
 
@@ -115,5 +114,5 @@
 
 .article_ingress {
   color: getColor(font-secondary);
-  margin-top: 2rem;
+  margin-top: 1rem;
 }

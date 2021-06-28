@@ -18,7 +18,7 @@ const ARTICLES = [
     author: "Jane Doe",
     avatar: "avatar-girl.jpg",
     ingress:
-      "Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+      "Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue.",
   },
 ];
 
@@ -62,6 +62,8 @@ function Carousel() {
               <div className={style.article_author}>
                 <div className={style.avatar}>
                   <img
+                    width="30px"
+                    height="30px"
                     src={`${process.env.PUBLIC_URL}/images/${article.avatar}`}
                     alt=""
                   />
