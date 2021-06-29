@@ -2,35 +2,17 @@ import { useState, useEffect, useCallback } from "react";
 import style from "./Carousel.module.scss";
 import Left from "../../assets/icons/Left";
 import Right from "../../assets/icons/Right";
-
-const ARTICLES = [
-  {
-    id: "1",
-    title: "Maecenas sed diam eget risus varius blandit sit amet non magna.",
-    author: "John Doe",
-    avatar: "avatar-boy.jpg",
-    ingress:
-      "Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui.",
-  },
-  {
-    id: "2",
-    title: "Vestibulum id ligula porta felis euismod semper.",
-    author: "Jane Doe",
-    avatar: "avatar-girl.jpg",
-    ingress:
-      "Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue.",
-  },
-];
+import Data from "../../util/Data";
 
 function Carousel() {
   const [index, setIndex] = useState(0);
 
   const nextIndex = useCallback(() => {
-    setIndex(index + 1 > ARTICLES.length - 1 ? 0 : index + 1);
+    setIndex(index + 1 > Data.length - 1 ? 0 : index + 1);
   }, [index]);
 
   const prevIndex = () => {
-    setIndex(index - 1 < 0 ? ARTICLES.length - 1 : index - 1);
+    setIndex(index - 1 < 0 ? Data.length - 1 : index - 1);
   };
 
   useEffect(() => {
@@ -44,7 +26,7 @@ function Carousel() {
   return (
     <div className={style.wrapper}>
       <div className={style.content}>
-        {ARTICLES.map((article, key) => (
+        {Data.map((article, key) => (
           <div
             className={[
               style.article,
