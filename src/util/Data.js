@@ -63,6 +63,86 @@ const Data = [
     ingress:
       "Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue.",
   },
+  {
+    id: "9",
+    title: "Vestibulum id ligula porta felis euismod semper.",
+    author: "Jane Doe",
+    avatar: "avatar-girl.jpg",
+    ingress:
+      "Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue.",
+  },
+  {
+    id: "10",
+    title: "Vestibulum id ligula porta felis euismod semper.",
+    author: "Jane Doe",
+    avatar: "avatar-girl.jpg",
+    ingress:
+      "Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue.",
+  },
+  {
+    id: "11",
+    title: "Vestibulum id ligula porta felis euismod semper.",
+    author: "Jane Doe",
+    avatar: "avatar-girl.jpg",
+    ingress:
+      "Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue.",
+  },
+  {
+    id: "12",
+    title: "Vestibulum id ligula porta felis euismod semper.",
+    author: "Jane Doe",
+    avatar: "avatar-girl.jpg",
+    ingress:
+      "Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue.",
+  },
+  {
+    id: "13",
+    title: "Vestibulum id ligula porta felis euismod semper.",
+    author: "Jane Doe",
+    avatar: "avatar-girl.jpg",
+    ingress:
+      "Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue.",
+  },
+  {
+    id: "14",
+    title: "Vestibulum id ligula porta felis euismod semper.",
+    author: "Jane Doe",
+    avatar: "avatar-girl.jpg",
+    ingress:
+      "Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue.",
+  },
+  {
+    id: "15",
+    title: "Vestibulum id ligula porta felis euismod semper.",
+    author: "Jane Doe",
+    avatar: "avatar-girl.jpg",
+    ingress:
+      "Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue.",
+  },
+  {
+    id: "16",
+    title: "Vestibulum id ligula porta felis euismod semper.",
+    author: "Jane Doe",
+    avatar: "avatar-girl.jpg",
+    ingress:
+      "Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue.",
+  },
+  {
+    id: "17",
+    title: "Vestibulum id ligula porta felis euismod semper.",
+    author: "Jane Doe",
+    avatar: "avatar-girl.jpg",
+    ingress:
+      "Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue.",
+  },
+  {
+    id: "18",
+    title: "Vestibulum id ligula porta felis euismod semper.",
+    author: "Jane Doe",
+    avatar: "avatar-girl.jpg",
+    ingress:
+      "Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue.",
+  },
 ];
 
 export default Data;

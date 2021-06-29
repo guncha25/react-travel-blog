@@ -3,7 +3,7 @@ import style from "./ArticleList.module.scss";
 import Data from "../../util/Data";
 
 function ArticleList(props) {
-  const [listCount, setListCount] = useState(props.item_count);
+  const [listCount, setListCount] = useState(parseInt(props.item_count));
 
   const loadMore = () => {
     setListCount(listCount + parseInt(props.item_count));

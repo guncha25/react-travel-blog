@@ -5,14 +5,15 @@ import Right from "../../assets/icons/Right";
 import Data from "../../util/Data";
 
 function Carousel() {
+  const articles = Data.slice(0, 3);
   const [index, setIndex] = useState(0);
 
   const nextIndex = useCallback(() => {
-    setIndex(index + 1 > Data.length - 1 ? 0 : index + 1);
-  }, [index]);
+    setIndex(index + 1 > articles.length - 1 ? 0 : index + 1);
+  }, [index, articles]);
 
   const prevIndex = () => {
-    setIndex(index - 1 < 0 ? Data.length - 1 : index - 1);
+    setIndex(index - 1 < 0 ? articles.length - 1 : index - 1);
   };
 
   useEffect(() => {
@@ -26,7 +27,7 @@ function Carousel() {
   return (
     <div className={style.wrapper}>
       <div className={style.content}>
-        {Data.map((article, key) => (
+        {articles.slice(0, 3).map((article, key) => (
           <div
             className={[
               style.article,
