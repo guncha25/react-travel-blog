@@ -29,7 +29,7 @@ function Header() {
           )}
           <div className={style.header_main}>
             <div className={style.header_title}>
-              <h1>Korima</h1>
+              <h1>Travel</h1>
             </div>
             <nav>
               <ul className={style.menu}>
@@ -73,7 +73,7 @@ function Header() {
             <span></span>
           </div>
           <div className={style.header_title}>
-            <h1>Korima</h1>
+            <h1>Travel</h1>
           </div>
           <SearchIcon className={style.search_icon} onClick={toggleSearch} />
         </div>

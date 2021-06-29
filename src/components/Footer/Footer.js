@@ -10,7 +10,7 @@ function Footer() {
     <footer>
       <Container className={style.footer}>
         <div className={style.header_title}>
-          <h1>Korima</h1>
+          <h1>Travel</h1>
         </div>
         <nav>
           <ul className={style.menu}>
