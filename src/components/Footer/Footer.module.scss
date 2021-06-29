@@ -1,0 +1,73 @@
+@import "../../scss/functions";
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.header_title {
+  @include from-m {
+    margin-bottom: 0;
+  }
+  h1 {
+    font-family: $font-lato;
+    letter-spacing: 5px;
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+}
+
+.menu {
+  margin-top: 2rem;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  li {
+    padding: 0.8rem;
+  }
+  @include from-m {
+    flex-flow: row;
+    margin-top: 0;
+    li {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.social_menu {
+  margin-top: 2rem;
+  list-style: none;
+  display: flex;
+  @include from-m {
+    margin-top: 0;
+  }
+  li {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  border-top: 1px solid getColor(line);
+  padding-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  flex-flow: column;
+  display: flex;
+  @include from-m {
+    flex-flow: row;
+  }
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  fill: getColor(font-primary);
+}

@@ -9,7 +9,6 @@ function ArticleList(props) {
     setListCount(listCount + parseInt(props.item_count));
   };
 
-  console.log(listCount);
   return (
     <>
       <div className={style.article_list}>
