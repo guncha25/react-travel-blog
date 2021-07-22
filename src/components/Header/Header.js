@@ -29,7 +29,9 @@ function Header() {
           )}
           <div className={style.header_main}>
             <div className={style.header_title}>
-              <h1>Travel</h1>
+              <h1>
+                <Link to="/">Travel</Link>
+              </h1>
             </div>
             <nav>
               <ul className={style.menu}>
@@ -37,10 +39,7 @@ function Header() {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/blog">Blog</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="/blog/1">Blog</Link>
                 </li>
                 <li>
                   <Link to="/404">404</Link>

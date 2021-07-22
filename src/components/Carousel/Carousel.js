@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import { Link } from "react-router-dom";
 import style from "./Carousel.module.scss";
 import Left from "../../assets/icons/Left";
 import Right from "../../assets/icons/Right";
@@ -41,7 +42,9 @@ function Carousel() {
               alt={article.title}
             />
             <div className={style.article_content}>
-              <h2>{article.title}</h2>
+              <Link to={`/blog/${article.id}`}>
+                <h2>{article.title}</h2>
+              </Link>
               <div className={style.article_author}>
                 <div className={style.avatar}>
                   <img

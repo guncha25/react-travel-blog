@@ -23,6 +23,16 @@
   }
 }
 
+.article {
+  transition: all 0.1s ease-in;
+  .article_content {
+    padding: 1em;
+  }
+  &:hover {
+    background-color: getColor("line");
+  }
+}
+
 .article_author {
   align-items: center;
   color: getColor(font-primary);
