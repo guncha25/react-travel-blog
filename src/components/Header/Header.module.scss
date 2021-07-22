@@ -17,6 +17,10 @@
   & > div {
     margin-top: 20px;
   }
+  li,
+  .header_tools > * {
+    line-height: 3.2em;
+  }
   @include from-m {
     display: flex;
     justify-content: space-between;

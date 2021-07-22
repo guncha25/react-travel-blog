@@ -7,6 +7,7 @@ function Mail(props) {
       y="0px"
       viewBox="0 0 512 512"
     >
+      <title>Mail</title>
       <g>
         <g>
           <path

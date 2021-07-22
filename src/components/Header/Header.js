@@ -23,11 +23,32 @@ function Header() {
     setSubscribeIsOpen(!subscribeIsOpen);
   };
   const { isDark, toggleTheme } = useTheme();
+
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (menuIsOpen && touchEnd - touchStart < -50) {
+      setMenuOpen(false);
+    }
+  };
+
   return (
     <header>
       <Container>
         <div
           className={[style.header, menuIsOpen ? style.open : null].join(" ")}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
         >
           <span className={style.close_menu} onClick={toggleMenu}>
             Close

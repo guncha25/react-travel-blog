@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 ReactDOM.render(
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/blog/:id" component={Blog} />

@@ -16,7 +16,7 @@ function Blog() {
         <div className={style.part}>
           <img
             className={style.article_image}
-            src={`/images/${article.id}.jpg`}
+            src={`${process.env.PUBLIC_URL}/images/${article.id}.jpg`}
             alt={article.title}
           />
         </div>

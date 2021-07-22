@@ -19,7 +19,7 @@ function ArticleList(props) {
               <div className={style.article_media}>
                 <img
                   className={style.article_image}
-                  src={`/images/${article.id}.jpg`}
+                  src={`${process.env.PUBLIC_URL}/images/${article.id}.jpg`}
                   alt={article.title}
                 />
               </div>
