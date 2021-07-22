@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/reactTravelBlog/static/css/main.179a6ec7.chunk.css",
+    "main.js": "/reactTravelBlog/static/js/main.0620b961.chunk.js",
+    "main.js.map": "/reactTravelBlog/static/js/main.0620b961.chunk.js.map",
+    "runtime-main.js": "/reactTravelBlog/static/js/runtime-main.994adbd5.js",
+    "runtime-main.js.map": "/reactTravelBlog/static/js/runtime-main.994adbd5.js.map",
+    "static/css/2.97503911.chunk.css": "/reactTravelBlog/static/css/2.97503911.chunk.css",
+    "static/js/2.af39eee4.chunk.js": "/reactTravelBlog/static/js/2.af39eee4.chunk.js",
+    "static/js/2.af39eee4.chunk.js.map": "/reactTravelBlog/static/js/2.af39eee4.chunk.js.map",
+    "index.html": "/reactTravelBlog/index.html",
+    "static/css/2.97503911.chunk.css.map": "/reactTravelBlog/static/css/2.97503911.chunk.css.map",
+    "static/css/main.179a6ec7.chunk.css.map": "/reactTravelBlog/static/css/main.179a6ec7.chunk.css.map",
+    "static/js/2.af39eee4.chunk.js.LICENSE.txt": "/reactTravelBlog/static/js/2.af39eee4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.994adbd5.js",
+    "static/css/2.97503911.chunk.css",
+    "static/js/2.af39eee4.chunk.js",
+    "static/css/main.179a6ec7.chunk.css",
+    "static/js/main.0620b961.chunk.js"
+  ]
+}
