@@ -2,7 +2,7 @@
   "name": "blog",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://guncha25.github.io/reactTravelBlog",
+  "homepage": "https://guncha25.github.io/react-travel-blog",
   "dependencies": {
     "breakpoint-sass": "^2.7.1",
     "node-sass": "^6.0.1",
