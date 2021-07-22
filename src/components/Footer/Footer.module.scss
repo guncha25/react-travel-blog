@@ -3,6 +3,9 @@
 @import "../../scss/mixins";
 
 .header_title {
+  a:hover {
+    text-decoration: none;
+  }
   @include from-m {
     margin-bottom: 0;
   }

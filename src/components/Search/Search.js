@@ -74,7 +74,7 @@ function Search(props) {
           {results &&
             results.map((result) => (
               <h2 key={result.id} className={style.search_item}>
-                <Link onClick={props.onClick} to="/">
+                <Link onClick={props.onClick} to={`/blog/${result.id}`}>
                   {result.title}
                 </Link>
               </h2>
