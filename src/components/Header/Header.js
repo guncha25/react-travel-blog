@@ -2,9 +2,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Container from "../Container";
 import Search from "../Search";
+import Subscribe from "../Subscribe";
 import style from "./Header.module.scss";
 import SearchIcon from "../../assets/icons/SearchIcon";
 import { useTheme } from "../../util/hooks/Theme";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Header() {
   const [menuIsOpen, setMenuOpen] = useState(false);
@@ -15,6 +18,10 @@ function Header() {
   const toggleSearch = () => {
     setSearchOpen(!searchIsOpen);
   };
+  const [subscribeIsOpen, setSubscribeIsOpen] = useState(false);
+  const toggleSubscribe = () => {
+    setSubscribeIsOpen(!subscribeIsOpen);
+  };
   const { isDark, toggleTheme } = useTheme();
   return (
     <header>
@@ -22,11 +29,9 @@ function Header() {
         <div
           className={[style.header, menuIsOpen ? style.open : null].join(" ")}
         >
-          {menuIsOpen && (
-            <span className={style.close_menu} onClick={toggleMenu}>
-              Close
-            </span>
-          )}
+          <span className={style.close_menu} onClick={toggleMenu}>
+            Close
+          </span>
           <div className={style.header_main}>
             <div className={style.header_title}>
               <h1>
@@ -49,15 +54,12 @@ function Header() {
           </div>
           <div className="header-secondary">
             <div className={style.header_tools}>
-              <a href="/#" className="sign-in">
-                Sign in
-              </a>
               <div className={style.dark_toggle} onClick={toggleTheme}>
                 {isDark ? `Light` : `Dark`}
               </div>
-              <a href="/#" className="subscribe-toggle">
+              <div className="subscribe-toggle" onClick={toggleSubscribe}>
                 Subscribe
-              </a>
+              </div>
               <SearchIcon
                 className={style.search_icon}
                 onClick={toggleSearch}
@@ -80,6 +82,13 @@ function Header() {
           <div className={style.menu_overlay} onClick={toggleMenu}></div>
         )}
         {searchIsOpen && <Search onClick={toggleSearch} />}
+        {subscribeIsOpen && (
+          <Subscribe
+            onClick={toggleSubscribe}
+            onSubmit={(text) => toast(text)}
+          />
+        )}
+        <ToastContainer position="bottom-right" />
       </Container>
     </header>
   );

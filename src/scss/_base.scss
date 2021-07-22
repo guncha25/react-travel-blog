@@ -30,6 +30,11 @@ body {
   background-color: getColor(bg);
 }
 
+.Toastify .Toastify__toast--default {
+  color: getColor(accent);
+  background-color: getColor(bg);
+}
+
 /* For light mode */
 :root {
   @each $name, $color in $colors {
